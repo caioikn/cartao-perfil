@@ -14,7 +14,7 @@ Este é um projeto simples desenvolvido com o objetivo de treinar habilidades em
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white)
 
 ## Acesso ao projeto
-Sem deploy.
+Acesse o projeto clicando [aqui](https://caioikn.github.io/cartao-perfil/).
 
 ## Abrir e rodar o projeto
 1. Clone este repositório em sua máquina local ou baixe os arquivos clicando [aqui](https://github.com/caioikn/cartao-perfil/archive/main/cartao-perfil.zip).
