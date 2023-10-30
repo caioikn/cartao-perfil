@@ -1,0 +1,90 @@
+body {
+  color: hsl(229, 23%, 23%);
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  justify-content: center;
+  background-color: hsl(185, 75%, 39%);
+  background-image: url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: 120% -80vh, -30% 40vh;
+  height: 100vh;
+}
+.container .card {
+  background-color: #FFFFFF;
+  border-radius: 18px;
+}
+.container .card .banner {
+  border-radius: 18px 18px 0px 0px;
+}
+.container .card .perfil {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  justify-content: flex-start;
+  border-bottom: 1px solid hsl(0, 0%, 90%);
+  padding-bottom: 25px;
+}
+.container .card .perfil img {
+  border: 5px solid #FFFFFF;
+  border-radius: 50%;
+  margin-top: -15%;
+}
+.container .card .perfil .nome {
+  display: inline;
+  font-weight: 700;
+  margin-right: 4px;
+}
+.container .card .perfil span {
+  color: hsl(227, 10%, 46%);
+}
+.container .card .perfil .cidade {
+  display: block;
+  font-size: 14px;
+  margin-top: 9px;
+  text-align: center;
+}
+.container .card .numeros {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 18px;
+  justify-content: space-evenly;
+  text-align: center;
+  padding: 25px 0px;
+}
+.container .card .numeros h2 {
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.container .card .numeros span {
+  color: hsl(227, 10%, 46%);
+  font-size: 12px;
+}
+.container .creditos {
+  font-size: 12px;
+  text-align: center;
+}
+.container .creditos a {
+  color: #000000;
+  text-decoration: none;
+  font-weight: 700;
+}
+.container .creditos a:hover {
+  text-decoration: underline;
+  transition: 0.2s;
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    background-position: left -50vh, right 50vh;
+  }
+}/*# sourceMappingURL=style.css.map */

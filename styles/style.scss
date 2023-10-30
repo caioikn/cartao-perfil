@@ -1,0 +1,105 @@
+$cor-fonte: hsl(229, 23%, 23%);
+$cor-fonte-secundaria: hsl(227, 10%, 46%);
+$cor-fundo-card: #FFFFFF;
+$cor-fundo-principal: hsl(185, 75%, 39%);
+$cor-linha: hsl(0, 0%, 90%);
+
+$fonte-principal: 'Kumbh Sans', sans-serif;
+
+@mixin flex-container($direction, $justify, $align, $gap: 0px) {
+    align-items: $align;
+    display: flex;
+    flex-direction: $direction;
+    gap: $gap;
+    justify-content: $justify;
+}
+
+body {
+    color: $cor-fonte;
+    font-family: $fonte-principal;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.container {
+    @include flex-container(column, center, center, 18px);
+
+    background-color: $cor-fundo-principal;
+    background-image: url('../images/bg-pattern-top.svg'), url('../images/bg-pattern-bottom.svg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: 120% -80vh, -30% 40vh;
+    height: 100vh;
+
+    .card {
+        background-color: $cor-fundo-card;
+        border-radius: 18px;
+
+        .banner {
+            border-radius: 18px 18px 0px 0px;
+        }
+
+        .perfil {
+            @include flex-container(column, flex-start, center, 18px);
+
+            border-bottom: 1px solid $cor-linha;
+            padding-bottom: 25px;
+
+            img {
+                border: 5px solid $cor-fundo-card;
+                border-radius: 50%;
+                margin-top: -15%;
+            }
+
+            .nome {
+                display: inline;
+                font-weight: 700;
+                margin-right: 4px;
+            }
+
+            span {
+                color: $cor-fonte-secundaria;
+            }
+
+            .cidade {
+                display: block;
+                font-size: 14px;
+                margin-top: 9px;
+                text-align: center;
+            }
+        }
+
+        .numeros {
+            @include flex-container(row, space-evenly, center, 18px);
+            text-align: center;
+            padding: 25px 0px;
+
+            h2 {
+                font-weight: 700;
+                margin-bottom: 5px;
+            }
+
+            span {
+                color: $cor-fonte-secundaria;
+                font-size: 12px;
+            }
+        }
+    }
+
+    .creditos {
+        font-size: 12px;
+        text-align: center;
+
+        a {
+            color: #000000;
+            text-decoration: none;
+            font-weight: 700;
+
+            &:hover {
+                text-decoration: underline;
+                transition: 0.2s;
+            }
+        }
+    }
+}
+
+@import 'responsividade';
